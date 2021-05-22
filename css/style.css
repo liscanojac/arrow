@@ -329,7 +329,7 @@ img{
     .showcase-text{
         text-align: center;
         margin-top: 20px;
-        animation: slideInFromRight 1s ease-in;
+        animation: slideInFromLeft 1s ease-in;
     }
 
     .showcase-form{
@@ -337,6 +337,7 @@ img{
         margin: auto;
         width: 430px;
         top: 35px;
+        animation: slideInFromRight 1s ease-in;
     }
 
     /* Utilities */
@@ -360,12 +361,12 @@ img{
 
     .chat .grid .info-card-section{
         display: flex;
-        position: relative;
-        top: -70px;
+        flex-direction: column;    
     }
 
     .chat .grid .info-card-section .info-card{
-        margin: 0 10px;
+        margin: 0;
+        margin-bottom: 15px;
     }
 
     .chat .grid-3{
@@ -408,6 +409,9 @@ img{
 }
 
 @media(max-width:550px){
+    .navbar .container{
+        padding: 0 5px;
+    }
 
     .navbar a{
         margin: 0;
